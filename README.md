@@ -15,8 +15,9 @@ Note: always remember to apply the transformations of the original dataset to th
 
 1. Delete or rename the ```cifar-10-r.npz``` file
 2. Extract the file ```cifar-10-r.zip```
-3. Create a ```data``` folder
-4. Place the extracted content in the data folder. Make sure you move the folders for each class. The final file tree should look like this:
+3. If you want, you can delete the original .zip file after extraction
+4. Create a ```data``` folder
+5. Place the extracted content in the data folder. Make sure you move the folders for each class. The final file tree should look like this (alphabetical order):
 ```
 ├── cifar_10_r_evaluation_example.ipynb
 ├── data/
@@ -32,8 +33,8 @@ Note: always remember to apply the transformations of the original dataset to th
 ├── prepare_data.py
 └── README.md
 ```
-5. Run the ```prepare_data.py``` script (code adapted from code provided by Prof. Artur [GitHub](https://github.com/arturjordao)). It will generate the ```cifar-10-r.npz``` file.
-6. Use the ```cifar-10-r.npz``` as needed
+6. Run the ```prepare_data.py``` script (code adapted from code provided by Prof. Artur ([GitHub](https://github.com/arturjordao))). It will generate the ```cifar-10-r.npz``` file.
+7. Use the ```cifar-10-r.npz``` as needed
 
 Note: (note repeated for emphasis) always remember to apply the transformations of the original dataset to the CIFAR10-R data. The example code in the ```cifar_10_r_evaluation_example.ipynb``` notebook shows a case of how it can be used to evaluate a model (TensorFlow/Keras background). For a quick evaluation, I recommend using Google Colab so you don't have to worry about installing packages.
 
