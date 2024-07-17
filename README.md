@@ -19,7 +19,6 @@ Note: always remember to apply the transformations of the original dataset to th
 4. Create a ```data``` folder
 5. Place the extracted content in the data folder. Make sure you move the folders for each class. Remove empty folders if you want. The final file tree should look like this (hierarchical and alphabetical order):
 ```
-├── cifar_10_r_evaluation_example.ipynb
 ├── data/
 │   ├── automobile/
 │   ├── bird/
@@ -29,6 +28,7 @@ Note: always remember to apply the transformations of the original dataset to th
 │   ├── frog/
 │   ├── ship/
 │   └── truck/
+├── cifar_10_r_evaluation_example.ipynb
 ├── LICENSE
 ├── prepare_data.py
 └── README.md
