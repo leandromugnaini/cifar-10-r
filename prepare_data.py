@@ -55,9 +55,9 @@ def folder_to_npz(path=''):
 if __name__ == '__main__':
     np.random.seed(12227)
 
-    X, y = folder_to_npz('Dataset1/Grouped_select')
+    X, y = folder_to_npz('data')
 
     X_train, X_test, y_train, y_test = train_test_split(X, y,
                                                         test_size=0.3, random_state=42)
 
-    np.savez_compressed('Dataset1', X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
+    np.savez_compressed('cifar-10-r', X_train=X_train, y_train=y_train, X_test=X_test, y_test=y_test)
